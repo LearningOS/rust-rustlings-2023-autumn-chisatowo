@@ -5,14 +5,15 @@
 // Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+
 
 fn main() {
-    let a = ???
-
+    let mut a: [&str; 10] = ["01234567"; 10];
+    a[9] = "0123456789";
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
     } else {
         println!("Meh, I eat arrays like that for breakfast.");
     }
+    println!("{}", a[9])
 }
